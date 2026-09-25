@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTERPOL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">I</div>
+          <div>
+            <span class="brand-name">INTERPOL</span>
+            <small>Центр мониторинга</small>
+          </div>
+        </div>
+
+        <nav class="tabs" aria-label="Навигация">
+          <button class="tab active" data-tab="overview">Главная</button>
+          <button class="tab" data-tab="profile">Профиль</button>
+          <button class="tab" data-tab="cases">Розыск</button>
+          <button class="tab" data-tab="analytics">Аналитика</button>
+          <button class="tab" data-tab="contacts">Контакты</button>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle">Светлая тема</button>
+      </header>
+
+      <main class="content">
+        <section class="tab-panel active" id="overview">
+          <div class="hero-card">
+            <div class="hero-image">
+              <img src="img/photo.jpg" alt="INTERPOL" />
+            </div>
+            <div class="hero-text">
+              <p class="eyebrow">Статус</p>
+              <h1>МУРАТ МАЗМАЕВ</h1>
+              <p class="status">Находится в федеральном розыске</p>
+              <div class="action-row">
+                <button class="primary-btn profile-btn" data-target="personal-data">Проверить</button>
+                <button class="secondary-btn profile-btn" data-target="crimes">Подписаться</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">24</span>
+              <span class="stat-label">Активных дела</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">86%</span>
+              <span class="stat-label">Уровень тревоги</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Регионы</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="profile">
+          <div class="profile-box">
+            <div class="profile-header">
+              <img src="img/photo.jpg" alt="Мурад Мазмаев" />
+              <div>
+                <p class="eyebrow">Личный профиль</p>
+                <h2>Мурат Мазмаев</h2>
+                <span class="profile-status">В федеральном розыске</span>
+              </div>
+            </div>
+
+            <div class="profile-nav">
+              <button class="mini-tab active" data-detail="personal-data">Личные данные</button>
+              <button class="mini-tab" data-detail="crimes">Преступления</button>
+            </div>
+
+            <div class="detail-panel active" id="personal-data">
+              <div class="profile-grid">
+                <div class="profile-card">
+                  <h3>Основная информация</h3>
+                  <ul>
+                    <li><span>Дата рождения</span><strong>16.04.2010</strong></li>
+                    <li><span>Гражданство</span><strong>Российская Федерация</strong></li>
+                    <li><span>Статус</span><strong>Ищется</strong></li>
+                  </ul>
+                </div>
+
+                <div class="profile-card">
+                  <h3>Оперативные данные</h3>
+                  <ul>
+                    <li><span>Регион</span><strong>Татарстан</strong></li>
+                    <li><span>Категория</span><strong>Международная</strong></li>
+                    <li><span>Риск</span><strong>Высокий</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-panel" id="crimes">
+              <div class="crime-list">
+                <div class="crime-card">
+                  <h3>Фальсификация документов</h3>
+                  <p>Использование поддельных паспортных данных при совершении финансовых операций.</p>
+                </div>
+                <div class="crime-card">
+                  <h3>Сексизм</h3>
+                  <p>Неоднократно появлялся на острове Эпштейна.</p>
+                </div>
+                <div class="crime-card">
+                  <h3>Терроризм</h3>
+                  <p>устраивал поджоги вместе с Усамом Бен Ладеном и Алмазом Исламовым, участвовал в террористической деятельности.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="cases">
+          <div class="panel-box">
+            <h2>Список розыска</h2>
+            <ul class="case-list">
+              <li><span>Международный запрос</span><strong>Активен</strong></li>
+              <li><span>Государственный контроль</span><strong>Проверка</strong></li>
+              <li><span>Проверка идентификации</span><strong>Готово</strong></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="analytics">
+          <div class="panel-box">
+            <h2>Аналитика</h2>
+            <div class="progress-group">
+              <label>Уровень риска</label>
+              <div class="progress"><span style="width: 86%;"></span></div>
+            </div>
+            <div class="progress-group">
+              <label>Проверка данных</label>
+              <div class="progress"><span style="width: 72%;"></span></div>
+            </div>
+            <div class="progress-group">
+              <label>База объектов</label>
+              <div class="progress"><span style="width: 94%;"></span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="contacts">
+          <div class="panel-box contacts-box">
+            <h2>Контакты</h2>
+            <p>Центр оперативного реагирования</p>
+            <div class="contact-list">
+              <span>Телефон: +7 939 734 57 77</span>
+              <span>Email: support@interpol.ru</span>
+              <span>Адрес: Набережный Челны, СОШ №53</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
